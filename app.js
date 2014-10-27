@@ -30,11 +30,11 @@ if ('development' == app.get('env')) {
 }
 
 if(env === 'development') {
-  var db_url = "mongodb://localhost/storedata";
+  var db_url = "mongodb://krishna:gameloft@linus.mongohq.com:10038/app31039409";
     mongoose.connect(db_url);
 }
 else {
-  var db_url = "mongodb://printvoid:nodecrud@ds063869.mongolab.com:63869/nodecrud";
+  var db_url = "mongodb://krishna:gameloft@linus.mongohq.com:10038/app31039409";
   mongoose.connect(db_url);
 }
 
@@ -77,7 +77,7 @@ app.param('title', function(req, res, next, title) {
     });
 });
 //SHOW
-app.get('/books/:name', function(req, res) {
+app.get('/books/:title', function(req, res) {
     res.render('books/show', {book:req.book});
 });
 
@@ -93,7 +93,7 @@ app.put('/books/:title', function(req, res) {
         { title: req.params.title },
         {title: b.title, description: b.description, author: b.author},
             function(err) {
-                res.redirect('/books/' + b.name);
+                res.redirect('/books/' + b.title);
             }
     )
 });

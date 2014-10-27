@@ -23,13 +23,13 @@ block content
         form(method='POST' action='/books/#{book.title}')
                 input(type='hidden', name='_method', value='PUT')
                 div.form-group
-                label Name
-                input.form-control#title(type='text' name='name', value='#{book.title}')
+                label Title
+                input.form-control#title(type='text' name='title', value='#{book.title}')
                 div.form-group
-                label Email
-                input.form-control#description(type='text', name='email', value='#{book.description}')
+                label Description
+                input.form-control#description(type='text', name='description', value='#{book.description}')
                 div.form-group
-                label Phone:
-                input.form-control#author(type='text', name='phone', value='#{book.author}')
+                label Author:
+                input.form-control#author(type='text', name='author', value='#{book.author}')
                 div.form-group
                 button.btn.btn-success.btn-lg(type='submit') Update
