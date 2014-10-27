@@ -37,7 +37,7 @@ else {
   var db_url = "mongodb://krishna:gameloft@linus.mongohq.com:10038/app31039409";
   mongoose.connect(db_url);
 }
-
+//Defining Schema
 mongoose.connect(db_url);
 var BookSchema = new mongoose.Schema({
     title: String,
