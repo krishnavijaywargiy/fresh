@@ -1,0 +1,5 @@
+h1  All Books
+
+ul
+    each book in books
+        li: a(href="/books/#{book.title}") #{book.titile} (#{book.description})
