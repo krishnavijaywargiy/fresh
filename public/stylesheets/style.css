@@ -3,7 +3,7 @@ html, body, h1, form, fieldset, legend, ol, li {
     padding: 0;
 }
 body {
-    background: #ffffff;
+    background: #bdc3c7;
     color: #111111;
     font-family: Arial, Georgia, "Times New Roman", Times, serif;
     padding: 20px;
@@ -12,6 +12,7 @@ body {
 h1 {
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
 }
 form#payment {
     border-radius: 5px;
@@ -19,7 +20,10 @@ form#payment {
     padding: 20px;
 }
 form#payment fieldset {
+    width: 40%;
+    float: center;
     border: none;
+    margin-left: 30%;
     margin-bottom: 10px;
 }
 form#payment fieldset:last-of-type {
@@ -28,6 +32,7 @@ form#payment fieldset:last-of-type {
 form#payment legend {
     color: #fff !important;
     font-size: 16px;
+    text-align: center;
     font-weight: bold;
     padding-bottom: 10px;
     text-shadow: 0 1px 1px #c0d576;
@@ -50,11 +55,11 @@ form#payment ol li {
     border-color: rgba(255,255,255,.6);
     border-style: solid;
     border-width: 2px;
-    border-radius: 5px;
+    border-radius: 0x;
     line-height: 30px;
     list-style: none;
     padding: 5px 30px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 form#payment ol ol li {
     background: none;
@@ -93,7 +98,7 @@ form#payment input[type=radio] {
     margin-right: 5px;
 }
 form#payment button {
-    background: #008000;
+    background: #e74c3c;
     border: none;
     border-radius: 20px;
     color: #ffffff;
@@ -111,7 +116,7 @@ form#payment button:hover {
     cursor: pointer;
 }
 body{
-    background: #449d44;
+    background: #8e44ad;
 }
 form#payment{
     margin: 0 auto;
